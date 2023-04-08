@@ -1,5 +1,5 @@
 # BitTales
-#"Connecting generations through the power of storytelling"
+# "Connecting generations through the power of storytelling"
 
 > [BitTales.com](BitTales.com)
 >
