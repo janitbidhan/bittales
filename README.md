@@ -1,5 +1,8 @@
 # BitTales
->[BitTales.com](BitTales.com)
+
+> [BitTales.com](BitTales.com)
+>
+
 
 Welcome to BitTales, an app designed for parents and children to enjoy stories together! BitTales is a fun and engaging way for parents to tell stories to their children in their own voices, creating a unique and memorable experience for the whole family.
 
