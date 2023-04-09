@@ -218,7 +218,7 @@
   </div><!-- End #main -->
   <script>
     var recordButton = document.getElementById('record-button');
-    var baapapi="http://localhost:8081/audio/"
+    var baapapi="http://bittales.tech:8081/audio/"
     var globalPathAudio="";
     var video = document.getElementById("background-video");
     var volumeSlider = document.getElementById("volume-slider");
@@ -288,7 +288,7 @@
       const formattedTime = `${minutes}`;
       document.getElementById('timer').innerHTML = formattedTime;
     }, 1000);
-    const apiUrl = 'http://localhost:8081/features/';
+    const apiUrl = 'http://bittales.tech:8081/features/';
 
     $(document).ready(function() {
       $.getJSON(apiUrl, function(data) {
