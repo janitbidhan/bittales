@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- creater @Aabha Bothera -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Bittales</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo.png" rel="apple-touch-icon">
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </head>
+  <body onload="onLoad()">
+    <div class="row">
+      <div
+        class="column"
+        id="left_col"
+        style="background-color: rgba(184, 195, 178, 1)">
+        <div class="img-div" id="img-div">
+          <img
+            class="bird-img"
+            id="bird-img"
+            src="./assets/img/bird.svg"
+            alt="bird_image"
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="column" id="right_col" style="background-color: white">
+        <div class="login-div" id="login-div">
+          <img src="assets/img/logo.png" alt="" style="width: 100px;">
+          <span class="d-none d-lg-block"></span>
+          <h1 id="appName">BitTales</h1>
+          <hr/>
+          <blockquote><h3>Connecting generations through the power of storytelling</h3></blockquote>
+          <form id="loginForm" onsubmit="return login();" action="" style="width: 90%;margin: 0 auto;">
+            <div class="txt_field">
+              <input id="username" type="text" required />
+              <span></span>
+              <label>Username</label>
+            </div>
+            <div class="txt_field">
+              <input id="password" type="password" required />
+              <span></span>
+              <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <button type="submit">Login</button>
+            <div class="signup_link">
+              New BitTales? <a href="#">Create Account</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>function onLoad() {
+  // Get the site parameter from the query string
+  var urlParams = new URLSearchParams(window.location.search);
+  var site = urlParams.get('site');
+
+  // Update the address field with the site parameter
+  var loginForm = document.getElementById("loginForm");
+  var appName = document.getElementById("appName");
+
+  loginForm.action = site + ".html";
+  appName.innerHTML=site.toUpperCase();
+  document.title=site.toUpperCase();
+}</script>

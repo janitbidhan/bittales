@@ -1,11 +1,15 @@
 package tech.bittales.backend.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tech.bittales.backend.model.Feature;
+import tech.bittales.backend.model.Stories;
 import tech.bittales.backend.repository.FeatureRepository;
+//import tech.bittales.backend.service.AudioService;
 
 import java.util.List;
 
@@ -16,11 +20,41 @@ public class FeaturesController {
     @Autowired
     private FeatureRepository featuresRepository;
 
+//    @Autowired
+//    private AudioService audioService;
+
     // Get all Feature
     @GetMapping("/")
     public List<Feature> getAllFeatures() {
-        return featuresRepository.findAll();
+        List<Feature> features = featuresRepository.findAll();
+
+//        // Loop through each Feature
+//        for (Feature feature : features) {
+//            Stories story = feature.getStory();
+//            if (story != null && story.getGid() != null) {
+//                // Get the audio file from Google Drive using the gid
+////                String audioFile = getAudioFileFromGoogleDrive(story.getGid());
+//
+//                // If the audio file was successfully retrieved, update the audioLink
+//                if (audioFile != null) {
+//                    story.setAudioLink("/audio/" + story.getName().replaceAll("\\s+", "") + ".wav");
+//                    // Save the audio file to local storage
+////                    saveAudioFileLocally(audioFile, story.getName());
+//                }
+//            }
+//        }
+//
+//        // Convert the modified features list back to JSON and return it
+//        ObjectMapper mapper = new ObjectMapper();
+//        String json = null;
+//        try {
+//            json = mapper.writeValueAsString(features);
+//        } catch (JsonProcessingException e) {
+//            e.printStackTrace();
+//        }
+        return features;
     }
+
 
     // Get a feature by ID
     @GetMapping("/{id}")

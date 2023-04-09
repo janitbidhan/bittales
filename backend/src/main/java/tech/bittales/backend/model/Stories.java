@@ -24,17 +24,11 @@ public class Stories {
     @Column(name = "linkbook")
     private String linkBook;
 
+    @Column(name = "gid")
+    private String gid;
     // Constructors, getters, and setters
 
     public Stories() {
-    }
-
-    public Stories(String name, String genre, String audioLink, Boolean userCreated, String linkBook) {
-        this.name = name;
-        this.genre = genre;
-        this.audioLink = audioLink;
-        this.userCreated = userCreated;
-        this.linkBook = linkBook;
     }
 
     public Long getId() {
@@ -83,5 +77,22 @@ public class Stories {
 
     public void setLinkBook(String linkBook) {
         this.linkBook = linkBook;
+    }
+
+    public String getGid() {
+        return gid;
+    }
+
+    public void setGid(String gid) {
+        this.gid = gid;
+    }
+
+    public Stories(String name, String genre, String audioLink, Boolean userCreated, String linkBook, String gid) {
+        this.name = name;
+        this.genre = genre;
+        this.audioLink = audioLink;
+        this.userCreated = userCreated;
+        this.linkBook = linkBook;
+        this.gid = gid;
     }
 }

@@ -1,7 +1,92 @@
+.video-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-right: 10px;
+}
+#bookOptions {
+  margin: 20px;
+  text-align: center;
+}
+#video-controls2{
+  border: 5px solid;
+  border-radius: 26%;
+  width: fit-content;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: white;
+  text-align: center;
 
+}
+#book-dropdown {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+#search-input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+#search-button {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#timer-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.red{
+  color: red !important;
+}
+audio {
+  display: none;
+}
+
+#video-controls{
+  border: 5px solid;
+  text-align: center;
+  background: #2023;
+  margin: 0 auto;
+  width: fit-content;
+  padding-right: 20px;
+}
+.video-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#background-video{
+  border: 2px solid black;
+  margin: 0 auto;
+  height: 50vh;
+  width: 100%;
+}
 #result {
-  margin: 50px auto;
-  width: 80%;
+  margin: 0px auto;
+  width: fit-content;
 }
 
 table {
@@ -144,9 +229,11 @@ h6 {
 /* Card */
 .card {
   margin-bottom: 30px;
-  border: none;
+  background: #bdbbbb1c;
+  border: 4px double;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  padding: 0px;
 }
 
 .card-header,
@@ -172,7 +259,8 @@ h6 {
 }
 
 .card-body {
-  padding: 0 20px 20px 20px;
+  padding: 0 0px 10px 0px;
+  background: #dbe8ff;
 }
 
 .card-img-overlay {
@@ -194,15 +282,19 @@ h6 {
 }
 
 .logo img {
-  max-height: 26px;
+  max-height: 50px;
   margin-right: 6px;
+  background: #f5f5e6;
+  box-shadow: 1px 2px 2px yellowgreen;
 }
 
 .logo span {
-  font-size: 26px;
-  font-weight: 700;
-  color: #012970;
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+  margin-left: 20px;
   font-family: "Nunito", sans-serif;
+  text-shadow: 2px 4px 2px #dde1b8;
 }
 
 .header {
