@@ -1,8 +1,13 @@
 # BitTales
 # "Connecting generations through the power of storytelling"
 
-> [BitTales.com](BitTales.com)
+(These sites are waiting CNAME Mapping)
+> [BitTales.tech](BitTales.tech)
 > 
+> [carecamp.tech](carecamp.com)
+>
+> [hackhappy.tech](hackhappy.tech)
+>
 > [DEMO](https://youtu.be/t3BfvlTGg_g)
 
 
