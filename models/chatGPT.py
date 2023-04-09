@@ -3,7 +3,7 @@ from time import sleep
 import backoff
 from openai.error import RateLimitError
 
-my_api_key = "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"
+my_api_key = "sk----"
 
 openai.api_key = my_api_key
 
